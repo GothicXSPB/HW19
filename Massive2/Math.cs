@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace Massive2
 {
@@ -21,7 +20,6 @@ namespace Massive2
         }
 
         public static void Show(int[,] array)
-
         {
             for (int i = 0; i < array.GetLength(0); i++)
             {
@@ -37,6 +35,7 @@ namespace Massive2
         {
             Console.WriteLine($"{line}: {result}");
         }
+
         public static void ShowConsole(int[] result, string line)
         {
             Console.Write(line);
@@ -136,7 +135,7 @@ namespace Massive2
             {
                 for (int j = 0; j < array.GetLength(1) - 1; j++)
                 {
-                    if (array[i, j] > array[i - 1, j] && array[i, j] > array[i, j + 1])
+                    if (array[i, j] < array[i - 1, j] && array[i, j] < array[i, j + 1])
                     {
                         result++;
                     }
