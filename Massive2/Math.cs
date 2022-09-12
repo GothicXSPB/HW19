@@ -43,6 +43,7 @@ namespace Massive2
             {
                 Console.Write(result[i] + "; ");
             }
+            Console.WriteLine();
         }
 
         //1) Найти минимальный элемент массива
@@ -133,9 +134,9 @@ namespace Massive2
 
             for (int i = 1; i < array.GetLength(0); i++)
             {
-                for (int j = 0; j < array.GetLength(1) - 1; j++)
+                for (int j = 1; j < array.GetLength(1); j++)
                 {
-                    if (array[i, j] < array[i - 1, j] && array[i, j] < array[i, j + 1])
+                    if (array[i, j] > array[i - 1, j] && array[i, j] > array[i, j - 1])
                     {
                         result++;
                     }

@@ -13,7 +13,7 @@ public class Program
         int[] indexMax = Math.GetMaxIndex(array);
         Math.ShowConsole(indexMax, "IndexMax: ");
         int amount = Math.AmountMinElement(array);
-        Math.ShowConsole(amount, "Number of minimum values: ");
+        Math.ShowConsole(amount, "Number of maximum values: ");
 
     }
 }
